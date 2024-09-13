@@ -4,23 +4,11 @@ import React from 'react';
 
 import profileImg from '../../images/profile.jpg';
 
-const classes = {
-  wrapper: 'block mb-6 md:flex',
-  imageWrapper: 'w-full max-w-150',
-  image: 'rounded-full transform transition-all duration-150 hover:scale-105',
-  contentWrapper: 'flex-none pt-6 md:pt-1 md:flex-1 md:pl-20',
-  name: 'text-5xl text-gray-900 font-bold leading-tight hover:text-black',
-  description: 'text-gray-600',
-  list: 'mt-6 uppercase tracking-wider',
-  item: 'inline list-none pr-4',
-  link:
-    'inline-block py-2 font-semibold text-xs text-gray-600 hover:text-black',
-};
-
 const Header = ({ metadata = {}, noBlog = false }) => {
   const twitter = get(metadata, 'author', false);
   const github = get(metadata, 'github', false);
   const linkedin = get(metadata, 'linkedin', false);
+  const scholar = get(metadata, 'scholar', false);  // Add this line
 
   return (
     <div className={classes.wrapper}>
@@ -59,6 +47,13 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               </a>
             </li>
           )}
+          {scholar && (  // Add this block for Google Scholar
+            <li className={classes.item}>
+              <a className={classes.link} href={scholar}>
+                Google Scholar
+              </a>
+            </li>
+          )}
           {!noBlog && (
             <li className={classes.item}>
               <Link className={classes.link} to="/blog">
@@ -66,6 +61,21 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               </Link>
             </li>
           )}
+          <li className={classes.item}>
+            <a className={classes.link} href={metadata.resume}>
+              Resume
+            </a>
+          </li>
+          <li className={classes.item}>
+            <a className={classes.link} href={metadata.cv}>
+              CV
+            </a>
+          </li>
+          <li className={classes.item}>
+            <a className={classes.link} href={metadata.publications}> 
+              Publications
+            </a>
+          </li>
         </ul>
       </div>
     </div>

@@ -14,6 +14,10 @@ module.exports = {
     github: `https://github.com/tahahb79`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/ali-habibi1379/`,
+    email: 'alihabibi.education@gmail.com',  // Add your email here
+    cv: 'https://drive.google.com/drive/folders/1o6IzUlOKWcWaoM57_BwDOFaRuKdZr7Ki',  // Add the Google Drive link to your CV
+    resume: 'https://drive.google.com/drive/folders/15xC6DXxl8ccIoiBk4S_CaeX3yF4qu7wA',
+    // publications: 'Your Publications Link', 
     // Content of the About Me section
     about: `Machine Learning Engineer with 3+ years of experience in deep learning, machine learning, mobile development, and backend development. Proven ability to design, develop, and deploy machine learning models in production. Passionate about cloud computing and machine learning operations, and eager to conduct research in academic settings.
 `,
@@ -64,6 +68,11 @@ module.exports = {
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
+      {
+        name: 'freelancer',
+        description: 'Data scientist , Auguest 2023 - present',
+        // link: 'https://github.com/RyanFitzgerald/devfolio',
+      },
       {
         name: 'nibbit',
         description: 'Data scientist | LLM Engineer, February 2023 - July 2023',
