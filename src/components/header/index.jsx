@@ -16,11 +16,23 @@ const classes = {
     'inline-block py-2 font-semibold text-xs text-gray-600 hover:text-black',
 };
 const Header = ({ metadata = {}, noBlog = false }) => {
+  console.log(metadata); // Debugging line
   const twitter = get(metadata, 'author', false);
   const github = get(metadata, 'github', false);
   const linkedin = get(metadata, 'linkedin', false);
-  const scholar = get(metadata, 'scholar', false);  // Add this line
-
+  const CV = get(metadata, 'CV', false);
+  const Resume = get(metadata, 'Resume', false);
+  const Publication = get(metadata, 'Publication', false);
+  const Email = get(metadata, 'email', false);
+// const Header = ({ metadata = {}, noBlog = false }) => {
+//   const twitter = get(metadata, 'author', false);
+//   const github = get(metadata, 'github', false);
+//   const CV = get(metadata, 'CV', false);
+//   const Resume = get(metadata, 'Resume', false);
+//   const linkedin = get(metadata, 'linkedin', false);
+//   const Publication = get(metadata, 'Publication', false);  // Add this line
+//   const Email = get(metadata, 'email', false);
+  
   return (
     <div className={classes.wrapper}>
       <div className={classes.imageWrapper}>
@@ -58,10 +70,31 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               </a>
             </li>
           )}
-          {scholar && (  // Add this block for Google Scholar
+          {CV && (
             <li className={classes.item}>
-              <a className={classes.link} href={scholar}>
-                Google Scholar
+              <a className={classes.link} href={CV}>
+                CV
+              </a>
+            </li>
+          )}
+          {Resume && (
+            <li className={classes.item}>
+              <a className={classes.link} href={Resume}>
+              Resume
+              </a>
+            </li>
+          )}
+          {Publication && (
+            <li className={classes.item}>
+              <a className={classes.link} href={Publication}>
+              Publication
+              </a>
+            </li>
+          )}
+          {Email && (
+            <li className={classes.item}>
+              <a className={classes.link} href={`mailto:${Email}`}>
+              Email
               </a>
             </li>
           )}
@@ -72,21 +105,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               </Link>
             </li>
           )}
-          <li className={classes.item}>
-            <a className={classes.link} href={metadata.resume}>
-              Resume
-            </a>
-          </li>
-          <li className={classes.item}>
-            <a className={classes.link} href={metadata.cv}>
-              CV
-            </a>
-          </li>
-          <li className={classes.item}>
-            <a className={classes.link} href={metadata.publications}> 
-              Publications
-            </a>
-          </li>
+
         </ul>
       </div>
     </div>
