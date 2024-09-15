@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `Ali Habibi | Machine Learning and LLM engineer`,
     // Description that goes under your name in main bio
-    description: `As a Machine Learning Engineer and LLM Lover, I want to make different`,
+    description: `As a Machine Learning Engineer and LLM enthusiast, I'm driven to make a meaningful impact through innovation.`,
     // Optional: Twitter account handle
     // author: `@rfitzio`,
     // Optional: Github account URL
