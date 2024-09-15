@@ -15,12 +15,11 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/ali-habibi1379/`,
     email: 'alihabibi.education@gmail.com',  // Add your email here
-    cv: 'https://drive.google.com/drive/folders/1o6IzUlOKWcWaoM57_BwDOFaRuKdZr7Ki',  // Add the Google Drive link to your CV
+    cv: 'https://drive.google.com/drive/folders/1o6IzUlOKWcWaoM57_BwDOFaRuKdZr7Ki?usp=sharing',  // Add the Google Drive link to your CV
     resume: 'https://drive.google.com/drive/folders/15xC6DXxl8ccIoiBk4S_CaeX3yF4qu7wA',
     // publications: 'Your Publications Link', 
     // Content of the About Me section
-    about: `Machine Learning Engineer with 3+ years of experience in deep learning, machine learning, mobile development, and backend development. Proven ability to design, develop, and deploy machine learning models in production. Passionate about cloud computing and machine learning operations, and eager to conduct research in academic settings.
-`,
+    about: `Machine Learning Engineer with over 3 years of experience spanning deep learning, machine learning, and full-stack development, including mobile and backend engineering. Demonstrated expertise in designing, developing, and deploying machine learning models into production environments, with a strong focus on scalability and performance. Experienced in working with Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and tokenizer systems. Passionate about cloud computing and machine learning operations (MLOps), and eager to pursue cutting-edge research in academic and industry settings.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
