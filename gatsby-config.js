@@ -25,7 +25,7 @@ module.exports = {
       {
         name: 'Face Recognition',
         description:
-          'Siamese networks excelled in classification with triplet loss for precision. TensorFlow was lauded for ease, flexibility, and GPU support. ResNet, a powerful deep learning architecture, handled data preprocessing and classification effectively. The results of this model were a loss of under 1% on training data and an accuracy of 89% on validation data. This was my bachelor project',
+          'Siamese networks excelled in classification with triplet loss for precision. TensorFlow was lauded for ease, flexibility, and GPU support. ResNet, a powerful deep learning architecture, handled data preprocessing and classification effectively. The results of this model were a loss of under 1% on training data and an accuracy of 89% on validation data. This was my bachelor project ',
         link: 'https://colab.research.google.com/drive/1Xv-1aiAlIM7m1hw7PKVCav5Aw5t8arAX?usp=sharing',
       },
       {
