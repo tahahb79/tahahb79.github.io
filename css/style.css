@@ -1,0 +1,221 @@
+/* --- Google Fonts (Example) --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap');
+
+/* --- Theme Variables & Base --- */
+:root {
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Merriweather', serif;
+
+    /* Light Theme */
+    --page-bg-light: #f8f9fa;
+    --text-color-light: #212529;
+    --header-text-light: #1a202c;
+    --subtext-color-light: #4a5568;
+    --accent-color-light: #FBBF24; /* Yellow */
+    --border-color-light: #e2e8f0;
+
+    --resume-btn-bg-light: #FBBF24;
+    --resume-btn-text-light: #374151;
+    --resume-btn-hover-light: #F59E0B;
+
+    --cv-btn-bg-light: #10B981;
+    --cv-btn-text-light: #ffffff;
+    --cv-btn-hover-light: #059669;
+
+    --projects-btn-bg-light: #EF4444;
+    --projects-btn-text-light: #ffffff;
+    --projects-btn-hover-light: #DC2626;
+
+    --contact-btn-bg-light: #3B82F6;
+    --contact-btn-text-light: #ffffff;
+    --contact-btn-hover-light: #2563EB;
+
+    --card-bg-light: #ffffff;
+    --card-shadow-light: rgba(0, 0, 0, 0.05);
+
+    /* Dark Theme */
+    --page-bg-dark: #1a202c;
+    --text-color-dark: #e2e8f0;
+    --header-text-dark: #f7fafc;
+    --subtext-color-dark: #a0aec0;
+    --accent-color-dark: #FBBF24;
+    --border-color-dark: #2d3748;
+
+    --resume-btn-bg-dark: #FBBF24;
+    --resume-btn-text-dark: #1a202c;
+    --resume-btn-hover-dark: #F59E0B;
+
+    --cv-btn-bg-dark: #10B981;
+    --cv-btn-text-dark: #06231a;
+    --cv-btn-hover-dark: #059669;
+
+    --projects-btn-bg-dark: #EF4444;
+    --projects-btn-text-dark: #ffffff;
+    --projects-btn-hover-dark: #DC2626;
+
+    --contact-btn-bg-dark: #3B82F6;
+    --contact-btn-text-dark: #ffffff;
+    --contact-btn-hover-dark: #2563EB;
+
+    --card-bg-dark: #2d3748;
+    --card-shadow-dark: rgba(0, 0, 0, 0.2);
+}
+
+/* Apply base theme (light) */
+body {
+    font-family: var(--font-primary);
+    background-color: var(--page-bg-light);
+    color: var(--text-color-light);
+}
+.bg-page-bg { background-color: var(--page-bg-light); }
+.text-text-color { color: var(--text-color-light); }
+.text-header-text { color: var(--header-text-light); }
+.text-subtext-color { color: var(--subtext-color-light); }
+.text-accent-color { color: var(--accent-color-light); }
+.border-border-color { border-color: var(--border-color-light); }
+
+.bg-resume-btn { background-color: var(--resume-btn-bg-light); }
+.text-resume-btn-text { color: var(--resume-btn-text-light); }
+.hover\:bg-resume-btn-hover:hover { background-color: var(--resume-btn-hover-light); }
+
+.bg-cv-btn { background-color: var(--cv-btn-bg-light); }
+.text-cv-btn-text { color: var(--cv-btn-text-light); }
+.hover\:bg-cv-btn-hover:hover { background-color: var(--cv-btn-hover-light); }
+
+.bg-projects-btn { background-color: var(--projects-btn-bg-light); }
+.text-projects-btn-text { color: var(--projects-btn-text-light); }
+.hover\:bg-projects-btn-hover:hover { background-color: var(--projects-btn-hover-light); }
+
+.bg-contact-btn { background-color: var(--contact-btn-bg-light); }
+.text-contact-btn-text { color: var(--contact-btn-text-light); }
+.hover\:bg-contact-btn-hover:hover { background-color: var(--contact-btn-hover-light); }
+
+.bg-card { background-color: var(--card-bg-light); }
+.card-shadow { box-shadow: 0 4px 6px -1px var(--card-shadow-light), 0 2px 4px -1px var(--card-shadow-light); }
+
+/* Apply dark theme */
+html.dark body {
+    background-color: var(--page-bg-dark);
+    color: var(--text-color-dark);
+}
+html.dark .bg-page-bg { background-color: var(--page-bg-dark); }
+html.dark .text-text-color { color: var(--text-color-dark); }
+html.dark .text-header-text { color: var(--header-text-dark); }
+html.dark .text-subtext-color { color: var(--subtext-color-dark); }
+html.dark .text-accent-color { color: var(--accent-color-dark); }
+html.dark .border-border-color { border-color: var(--border-color-dark); }
+
+html.dark .bg-resume-btn { background-color: var(--resume-btn-bg-dark); }
+html.dark .text-resume-btn-text { color: var(--resume-btn-text-dark); }
+html.dark .hover\:bg-resume-btn-hover:hover { background-color: var(--resume-btn-hover-dark); }
+
+html.dark .bg-cv-btn { background-color: var(--cv-btn-bg-dark); }
+html.dark .text-cv-btn-text { color: var(--cv-btn-text-dark); }
+html.dark .hover\:bg-cv-btn-hover:hover { background-color: var(--cv-btn-hover-dark); }
+
+html.dark .bg-projects-btn { background-color: var(--projects-btn-bg-dark); }
+html.dark .text-projects-btn-text { color: var(--projects-btn-text-dark); }
+html.dark .hover\:bg-projects-btn-hover:hover { background-color: var(--projects-btn-hover-dark); }
+
+html.dark .bg-contact-btn { background-color: var(--contact-btn-bg-dark); }
+html.dark .text-contact-btn-text { color: var(--contact-btn-text-dark); }
+html.dark .hover\:bg-contact-btn-hover:hover { background-color: var(--contact-btn-hover-dark); }
+
+html.dark .bg-card { background-color: var(--card-bg-dark); }
+html.dark .card-shadow { box-shadow: 0 4px 6px -1px var(--card-shadow-dark), 0 2px 4px -1px var(--card-shadow-dark); }
+
+/* --- General & Utility --- */
+.min-h-screen-minus-header {
+    min-height: calc(100vh - 7rem); /* Adjust based on actual header height */
+}
+.nav-link {
+    @apply text-subtext-color hover:text-accent-color transition-colors duration-200;
+}
+.action-button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    font-size: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* These classes are inserted from page JSON, so keep them outside Tailwind's scan. */
+.action-button.bg-resume-btn { background-color: var(--resume-btn-bg-light); }
+.action-button.bg-cv-btn { background-color: var(--cv-btn-bg-light); }
+.action-button.bg-projects-btn { background-color: var(--projects-btn-bg-light); }
+.action-button.bg-contact-btn { background-color: var(--contact-btn-bg-light); }
+.action-button.bg-resume-btn:hover { background-color: var(--resume-btn-hover-light); }
+.action-button.bg-cv-btn:hover { background-color: var(--cv-btn-hover-light); }
+.action-button.bg-projects-btn:hover { background-color: var(--projects-btn-hover-light); }
+.action-button.bg-contact-btn:hover { background-color: var(--contact-btn-hover-light); }
+html.dark .action-button.bg-resume-btn { background-color: var(--resume-btn-bg-dark); }
+html.dark .action-button.bg-cv-btn { background-color: var(--cv-btn-bg-dark); }
+html.dark .action-button.bg-projects-btn { background-color: var(--projects-btn-bg-dark); }
+html.dark .action-button.bg-contact-btn { background-color: var(--contact-btn-bg-dark); }
+html.dark .action-button.bg-resume-btn:hover { background-color: var(--resume-btn-hover-dark); }
+html.dark .action-button.bg-cv-btn:hover { background-color: var(--cv-btn-hover-dark); }
+html.dark .action-button.bg-projects-btn:hover { background-color: var(--projects-btn-hover-dark); }
+html.dark .action-button.bg-contact-btn:hover { background-color: var(--contact-btn-hover-dark); }
+.action-button:hover {
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+.floating-icon-link {
+    @apply text-subtext-color hover:text-accent-color text-xl p-2 transition-colors duration-200;
+}
+.floating-icon-link i { /* Ensure icons inside button also transition if needed */
+    transition: color 0.2s ease;
+}
+
+/* Animation Utilities */
+.animate-fade-in-down { opacity: 0; animation: fadeInDown 0.8s ease-out forwards; }
+.animate-fade-in-up { opacity: 0; animation: fadeInUp 0.8s ease-out forwards; }
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-400 { animation-delay: 0.4s; }
+.animation-delay-600 { animation-delay: 0.6s; }
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Page Specific Titles */
+.page-title { @apply text-4xl sm:text-5xl font-bold text-header-text mb-8 text-center; }
+.page-subtitle { @apply text-lg sm:text-xl text-subtext-color mb-12 text-center max-w-2xl mx-auto; }
+
+/* Project Card Styling */
+.project-card { @apply bg-card rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-1; }
+.project-card img { @apply w-full h-48 object-cover; }
+.project-card-content { @apply p-6; }
+.project-card-title { @apply text-xl font-semibold text-header-text mb-2; }
+.project-card-description { @apply text-text-color text-sm mb-4 leading-relaxed; }
+.project-card-tech { @apply text-xs text-accent-color mb-4; }
+.project-card-links a { @apply inline-block text-sm text-accent-color hover:underline mr-4; }
+.project-card-links a i { @apply mr-1; }
+
+/* Contact Form Styling */
+.contact-form label { @apply block text-sm font-medium text-text-color mb-1; }
+.contact-form input, .contact-form textarea { @apply w-full px-3 py-2 border border-border-color rounded-md shadow-sm focus:outline-none focus:ring-accent-color focus:border-accent-color bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white; }
+.contact-form button { @apply w-full sm:w-auto bg-accent-color text-white font-semibold py-2 px-6 rounded-md hover:opacity-90 transition-opacity duration-200; }
+
+/* Print Styles */
+@media print {
+    body { background-color: #ffffff !important; color: #000000 !important; font-family: 'Times New Roman', Times, serif; font-size: 11pt; }
+    header, footer, .no-print, .floating-icon-link, #theme-toggle-float { display: none !important; }
+    .container { max-width: 100% !important; margin: 0 !important; padding: 1cm !important; }
+    .action-button { display: none; }
+    .profile-image { border-color: #cccccc !important; max-width: 150px !important; max-height: 150px !important; }
+    h1, h2, h3, p, a { color: #000000 !important; }
+    a { text-decoration: underline !important; }
+    .min-h-screen-minus-header { min-height: auto !important; }
+}

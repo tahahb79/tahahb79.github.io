@@ -1,0 +1,43 @@
+{
+    "page": {
+        "title": "Ali Habibi | AI Engineer · Computer Vision Researcher",
+        "favicon": "images/Ali%20Habibi.png"
+    },
+    "header": {
+        "name": "Ali Habibi ",
+        "subtitle": "  AI Engineer · Computer Vision Researcher"
+    },
+    "navigation": {
+        "links": [
+            {"text": "Resume", "url": "resume.html"},
+            {"text": "CV", "url": "cv.html"},
+            {"text": "Projects", "url": "projects.html"},
+            {"text": "Publications", "url": "publications.html"}
+        ]
+    },
+    "main": {
+        "profile": {
+            "image": "images/Ali%20Habibi.png",
+            "fallbackImage": "https://ui-avatars.com/api/?name=Ali+Habibi&size=400&background=663399&color=FFFFFF&bold=true",
+            "altText": "Ali Habibi"
+        },
+        "greeting": "Hello!",
+        "subheading": "About Me",
+        "description": "I'm an AI Engineer and published computer vision researcher with over 3 years of experience in deep learning and production ML systems. My research focuses on face verification using Siamese networks, transfer learning, and contrastive learning. I also work with Large Language Models and Retrieval-Augmented Generation (RAG). I like staying curious and learning new things as the field grows, and I'm always up for the next interesting problem — in research or in the real world.",
+        "circles": [
+            {"label": "Resume", "link": "resume.html", "class": "bg-resume-btn hover:bg-resume-btn-hover text-resume-btn-text"},
+            {"label": "CV", "link": "cv.html", "class": "bg-cv-btn hover:bg-cv-btn-hover text-cv-btn-text"},
+            {"label": "Publications", "link": "publications.html", "class": "bg-contact-btn hover:bg-contact-btn-hover text-contact-btn-text"},
+            {"label": "Projects", "link": "projects.html", "class": "bg-projects-btn hover:bg-projects-btn-hover text-projects-btn-text"}
+        ]
+    },
+    "socialLinks": {
+        "github": "https://github.com/tahahb79",
+        "linkedin": "https://www.linkedin.com/in/ali-habibi1379/",
+        "email": "alihabibi.education@gmail.com",
+        "googleScholar": "https://scholar.google.com/citations?view_op=list_works&hl=en&user=jXs8DigAAAAJ"
+    },
+    "footer": {
+        "lastUpdated": "September 2026"
+    }
+}

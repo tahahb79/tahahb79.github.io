@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title id="page-title"></title>
+    <link rel="preload" href="css/output.css" as="style">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" id="favicon" href="" type="image/png">
+    <script type="module" src="js/init.js"></script>
+</head>
+<body class="bg-page-bg text-text-color font-primary transition-colors duration-300">
+
+    <header class="py-6 px-4 sm:px-8 fixed top-0 left-0 right-0 z-50 bg-page-bg/80 backdrop-blur-md shadow-sm">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-header-text" id="header-name">
+                <span class="text-accent-color">&#9679;</span> <span id="header-realname"></span>
+                &nbsp;&nbsp;<span class="font-light text-subtext-color text-lg hidden sm:inline" id="header-subtitle"></span>
+            </a>
+            <div class="space-x-4 sm:space-x-6 text-sm sm:text-base" id="nav-links"></div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto mt-28 lg:mt-32 px-4 sm:px-8 flex flex-col lg:flex-row items-center min-h-screen-minus-header">
+        <div class="w-full lg:w-2/5 flex justify-center lg:justify-end mb-10 lg:mb-0 lg:pr-10 xl:pr-16">
+            <img id="profile-image" class="profile-image rounded-full w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 object-cover shadow-2xl border-8 border-white dark:border-gray-700" src="" alt="">
+        </div>
+
+        <div class="w-full lg:w-3/5 text-center lg:text-left">
+            <h1 class="text-5xl sm:text-6xl lg:text-8xl font-bold text-header-text mb-4 animate-fade-in-down" id="greeting"></h1>
+            <h2 class="text-xl sm:text-2xl font-semibold text-subtext-color mb-3 animate-fade-in-down animation-delay-200" id="subheading"></h2>
+            <p class="text-text-color leading-relaxed mb-10 max-w-md mx-auto lg:mx-0 animate-fade-in-up animation-delay-400" id="description"></p>
+            <div class="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 animate-fade-in-up animation-delay-600" id="main-circles"></div>
+        </div>
+    </main>
+
+    <div class="fixed left-2 sm:left-4 top-1/2 transform -translate-y-1/2 space-y-2 p-1.5 sm:p-2 bg-white dark:bg-gray-800 shadow-lg rounded-full no-print hidden md:flex flex-col z-40" id="social-links"></div>
+
+    <footer class="text-center py-8 mt-12 text-subtext-color text-sm border-t border-border-color">
+        &copy; <span id="currentYear"></span> <span id="footer-name"></span>. All rights reserved.
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

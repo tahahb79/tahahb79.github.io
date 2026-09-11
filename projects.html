@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title id="page-title"></title>
+    <link rel="preload" href="css/output.css" as="style">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" id="favicon" href="" type="image/png">
+    <script type="module" src="js/init.js"></script>
+</head>
+<body class="bg-page-bg text-text-color font-primary transition-colors duration-300">
+
+    <header class="py-6 px-4 sm:px-8 fixed top-0 left-0 right-0 z-50 bg-page-bg/80 backdrop-blur-md shadow-sm">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-header-text" id="header-name"></a>
+            <div class="space-x-4 sm:space-x-6 text-sm sm:text-base" id="nav-links"></div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto mt-28 lg:mt-32 px-4 sm:px-8 py-8">
+        <h1 class="page-title animate-fade-in-down" id="main-title"></h1>
+        <p class="page-subtitle animate-fade-in-down animation-delay-200" id="main-subtitle"></p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up animation-delay-400" id="projects-grid"></div>
+    </main>
+
+    <div class="fixed left-2 sm:left-4 top-1/2 transform -translate-y-1/2 space-y-2 p-1.5 sm:p-2 bg-white dark:bg-gray-800 shadow-lg rounded-full no-print hidden md:flex flex-col z-40" id="social-links"></div>
+
+    <footer class="text-center py-8 text-subtext-color text-sm border-t border-border-color">
+        Last updated: <span id="lastUpdate"></span>
+    </footer>
+</body>
+</html>

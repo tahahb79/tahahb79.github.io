@@ -1,0 +1,55 @@
+{
+    "page": {
+        "title": "Resume | Ali Habibi",
+        "favicon": "images/Ali%20Habibi.png"
+    },
+    "header": {
+        "name": "Ali Habibi"
+    },
+    "navigation": {
+        "links": [
+            {"text": "Home", "url": "index.html"},
+            {"text": "Resume", "url": "resume.html", "active": true},
+            {"text": "CV", "url": "cv.html"},
+            {"text": "Publications", "url": "publications.html"},
+            {"text": "Projects", "url": "projects.html"}
+        ]
+    },
+    "main": {
+        "title": "Resume",
+        "downloadSection": {
+            "title": "View My Resume",
+            "description": "View my full resume on Google Drive.",
+            "button": {
+                "text": "View Resume",
+                "link": "https://drive.google.com/drive/folders/15xC6DXxl8ccIoiBk4S_CaeX3yF4qu7wA"
+            }
+        },
+        "experience": {
+            "title": "Experience",
+            "jobs": [
+                {"title": "Data Scientist", "company": "Freelancer", "period": "August 2023 - Present", "responsibilities": ["Deliver data science and machine learning solutions as an independent freelancer."]},
+                {"title": "Data Scientist | LLM Engineer", "company": "Nibbit", "period": "February 2023 - July 2023", "responsibilities": ["Worked on data science and large language model engineering initiatives."]},
+                {"title": "Django Developer (Internship)", "company": "Mehr-pars", "period": "September 2021 - November 2021", "responsibilities": ["Contributed to backend development using Django."]}
+            ]
+        },
+        "education": {
+            "title": "Profile",
+            "degrees": [{"degree": "Machine Learning and LLM Engineer", "school": "Professional Profile", "period": "3+ years of experience", "focus": "Deep learning, machine learning, full-stack development, LLMs, RAG, tokenizer systems, cloud computing, and MLOps. Education details were not specified in the source configuration."}]
+        },
+        "skills": {
+            "title": "Skills",
+            "categories": {
+                "technical": {"title": "Languages, Frameworks, and Databases", "items": ["Python, Golang, Keras, VGG, Django, Fast-api", "Tensorflow, numpy, pandas, langschain, yolo", "Colab, Power Bi", "MongoDB, CosmosDB, MySQL"]},
+                "soft": {"title": "Platforms and Engineering Practices", "items": ["Docker, Kubernetes, Azure", "CI / CD", "Web scraping, Microservices, API design", "Agile / Scrum", "GPT and Bert Architecture"]}
+            }
+        }
+    },
+    "socialLinks": {
+        "github": "https://github.com/tahahb79",
+        "linkedin": "https://www.linkedin.com/in/ali-habibi1379/",
+        "email": "alihabibi.education@gmail.com",
+        "googleScholar": "https://scholar.google.com/citations?view_op=list_works&hl=en&user=jXs8DigAAAAJ"
+    },
+    "footer": {"lastUpdated": "September 2026"}
+}

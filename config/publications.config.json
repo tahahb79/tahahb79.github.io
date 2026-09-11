@@ -1,0 +1,21 @@
+{
+    "page": {"title": "Publications | Ali Habibi", "favicon": "images/Ali%20Habibi.png"},
+    "header": {"name": "Ali Habibi"},
+    "navigation": {"links": [
+        {"text": "Home", "url": "index.html"},
+        {"text": "Resume", "url": "resume.html"},
+        {"text": "CV", "url": "cv.html"},
+        {"text": "Publications", "url": "publications.html", "active": true},
+        {"text": "Projects", "url": "projects.html"}
+    ]},
+    "main": {
+        "title": "Publications",
+        "subtitle": "Research in computer vision, deep learning, and machine learning.",
+        "sections": {
+            "academic": {"title": "Academic Publications", "publications": [{"title": "A Siamese network-based Xception for Face Recognition", "venue": "Ali Habibi, Mahlagha Afrasiabi, and Moniba Chaparian | Journal of Electrical and Computer Engineering Innovations (JECEI), 14(1), 33-40, 2026", "description": "A transfer learning approach for one-shot face verification using a Siamese network with an Xception backbone, Euclidean distance, and contrastive loss. The model achieved 97.6% verification accuracy on LFW and 96.25% on ORL, demonstrating robust performance in small-sample settings.", "links": {"paper": "https://jecei.sru.ac.ir/article_2347.html", "cite": "https://doi.org/10.22061/jecei.2025.11780.834"}}]},
+            "technical": {"title": "Technical Articles", "articles": []}
+        }
+    },
+    "socialLinks": {"github": "https://github.com/tahahb79", "linkedin": "https://www.linkedin.com/in/ali-habibi1379/", "email": "alihabibi.education@gmail.com", "googleScholar": "https://scholar.google.com/citations?view_op=list_works&hl=en&user=jXs8DigAAAAJ"},
+    "footer": {"lastUpdated": "September 2026"}
+}
