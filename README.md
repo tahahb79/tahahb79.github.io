@@ -132,4 +132,4 @@ The site works with both deployment formats:
 
 ## License
 
-Add the license that best matches your intended use before distributing the template publicly.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
