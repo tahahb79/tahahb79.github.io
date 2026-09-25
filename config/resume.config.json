@@ -8,11 +8,27 @@
     },
     "navigation": {
         "links": [
-            {"text": "Home", "url": "index.html"},
-            {"text": "Resume", "url": "resume.html", "active": true},
-            {"text": "CV", "url": "cv.html"},
-            {"text": "Publications", "url": "publications.html"},
-            {"text": "Projects", "url": "projects.html"}
+            {
+                "text": "Home",
+                "url": "index.html"
+            },
+            {
+                "text": "Resume",
+                "url": "resume.html",
+                "active": true
+            },
+            {
+                "text": "CV",
+                "url": "cv.html"
+            },
+            {
+                "text": "Publications",
+                "url": "publications.html"
+            },
+            {
+                "text": "Projects",
+                "url": "projects.html"
+            }
         ]
     },
     "main": {
@@ -25,24 +41,91 @@
                 "link": "https://drive.google.com/drive/folders/15xC6DXxl8ccIoiBk4S_CaeX3yF4qu7wA"
             }
         },
-        "experience": {
-            "title": "Experience",
-            "jobs": [
-                {"title": "Data Scientist", "company": "Freelancer", "period": "August 2023 - Present", "responsibilities": ["Deliver data science and machine learning solutions as an independent freelancer."]},
-                {"title": "Data Scientist | LLM Engineer", "company": "Nibbit", "period": "February 2023 - July 2023", "responsibilities": ["Worked on data science and large language model engineering initiatives."]},
-                {"title": "Django Developer (Internship)", "company": "Mehr-pars", "period": "September 2021 - November 2021", "responsibilities": ["Contributed to backend development using Django."]}
+        "professionalSummary": {
+            "title": "Professional Summary",
+            "paragraphs": [
+                "AI Engineer and published computer vision researcher with 3+ years of experience in deep learning and production machine learning systems. Research focused on face verification using Siamese networks, transfer learning, and contrastive learning, published in the Journal of Electrical and Computer Engineering Innovations (JECEI) with 97.6% verification accuracy on the LFW benchmark. Experienced with Large Language Models and Retrieval-Augmented Generation (RAG). Enthusiastic about continuous learning and taking on new technical challenges."
             ]
-        },
-        "education": {
-            "title": "Profile",
-            "degrees": [{"degree": "Machine Learning and LLM Engineer", "school": "Professional Profile", "period": "3+ years of experience", "focus": "Deep learning, machine learning, full-stack development, LLMs, RAG, tokenizer systems, cloud computing, and MLOps. Education details were not specified in the source configuration."}]
         },
         "skills": {
             "title": "Skills",
-            "categories": {
-                "technical": {"title": "Languages, Frameworks, and Databases", "items": ["Python, Golang, Keras, VGG, Django, Fast-api", "Tensorflow, numpy, pandas, langschain, yolo", "Colab, Power Bi", "MongoDB, CosmosDB, MySQL"]},
-                "soft": {"title": "Platforms and Engineering Practices", "items": ["Docker, Kubernetes, Azure", "CI / CD", "Web scraping, Microservices, API design", "Agile / Scrum", "GPT and Bert Architecture"]}
-            }
+            "categories": [
+                {
+                    "title": "Deep Learning & AI",
+                    "items": [
+                        "TensorFlow, Keras, PyTorch, CNNs, Vision Transformers (ViTs), YOLO variants, UNet, Siamese Networks, Explainable AI (Grad-CAM), LLMs, LangChain, RAG."
+                    ]
+                },
+                {
+                    "title": "Programming & Data",
+                    "items": [
+                        "Python, SQL, NumPy, Pandas, Matplotlib, Scikit-Learn, KNIME, NoSQL, Cosmos DB."
+                    ]
+                },
+                {
+                    "title": "Software & Cloud",
+                    "items": [
+                        "Git, FastAPI, REST APIs, Azure, Docker."
+                    ]
+                }
+            ]
+        },
+        "experience": {
+            "title": "Experience",
+            "jobs": [
+                {
+                    "title": "Machine Learning & Computer Vision Researcher (Freelance)",
+                    "company": "Independent Research",
+                    "period": "Jun 2023 – Present",
+                    "location": "",
+                    "responsibilities": [
+                        "Designed natural language processing pipelines for large-scale social media data collection and classification, applying metaheuristic optimization algorithms (Particle Swarm Optimization, Grey Wolf Optimizer) for feature selection."
+                    ]
+                },
+                {
+                    "title": "Research Assistant — Undergraduate Thesis",
+                    "company": "Hamedan University of Technology",
+                    "period": "2024 – 2025",
+                    "location": "Hamedan, Iran",
+                    "responsibilities": [
+                        "Conducted independent thesis research titled “Face Recognition with Siamese Networks” under the supervision of Dr. Mahlagha Afrasiabi, Department of Computer Engineering.",
+                        "Designed and implemented a Siamese-network verification pipeline using transfer learning with an Xception backbone and contrastive-loss optimization, achieving 97.6% verification accuracy on the LFW benchmark and 96.25% on the ORL dataset."
+                    ]
+                },
+                {
+                    "title": "AI Developer",
+                    "company": "nibbit",
+                    "period": "Feb 2023 – Jun 2023",
+                    "location": "Canada (Remote)",
+                    "responsibilities": [
+                        "Developed a generative AI chatbot using FastAPI and Azure cloud infrastructure, integrating the ChatGPT API to improve client data retrieval efficiency.",
+                        "Designed predictive models on Cosmos DB and NoSQL data to forecast user behavior and long-term usage patterns."
+                    ]
+                }
+            ]
+        },
+        "education": {
+            "title": "Education",
+            "degrees": [
+                {
+                    "degree": "Master of Science in Artificial Intelligence",
+                    "school": "Islamic Azad University",
+                    "location": "Hamedan, Iran",
+                    "period": "Oct 2024 – present",
+                    "details": [
+                        "Cumulative GPA: 18.73/20 (93.65/100)"
+                    ]
+                },
+                {
+                    "degree": "Bachelor of Science in Computer Engineering",
+                    "school": "Hamedan University of Technology",
+                    "location": "Hamedan, Iran",
+                    "period": "Oct 2018 – Oct 2023",
+                    "details": [
+                        "Cumulative GPA: 15.11/20 (75/100)"
+                    ]
+                }
+            ]
         }
     },
     "socialLinks": {
@@ -51,5 +134,7 @@
         "email": "alihabibi.education@gmail.com",
         "googleScholar": "https://scholar.google.com/citations?view_op=list_works&hl=en&user=jXs8DigAAAAJ"
     },
-    "footer": {"lastUpdated": "September 2026"}
+    "footer": {
+        "lastUpdated": "September 2026"
+    }
 }

@@ -153,16 +153,17 @@ class ConfigLoader {
         const title = document.querySelector('h1.page-title');
         if (title) title.textContent = this.config.main.title;
         this.updateResumeDownloadSection(this.config.main.downloadSection);
-        const experienceSection = document.getElementById('experience-list');
-        if (experienceSection) experienceSection.innerHTML = this.config.main.experience.jobs.map(job => `<div class="bg-card p-6 rounded-lg card-shadow"><h3 class="text-xl font-semibold text-header-text">${job.title}</h3><p class="text-accent-color">${job.company} | ${job.period}</p><ul class="mt-4 space-y-2 text-text-color">${job.responsibilities.map(resp => `<li>• ${resp}</li>`).join('')}</ul></div>`).join('');
-        const education = this.config.main.education.degrees[0];
-        const educationCard = document.getElementById('education-card');
-        if (educationCard) educationCard.innerHTML = `<h3 class="text-xl font-semibold text-header-text">${education.degree}</h3><p class="text-accent-color">${education.school} | ${education.period}</p><p class="mt-2 text-text-color">${education.focus}</p>`;
-        const skillsGrid = document.getElementById('skills-grid');
-        if (skillsGrid) {
-            const { technical, soft } = this.config.main.skills.categories;
-            skillsGrid.innerHTML = `<div><h3 class="text-lg font-semibold text-header-text mb-3">${technical.title}</h3><ul class="space-y-2 text-text-color">${technical.items.map(item => `<li>• ${item}</li>`).join('')}</ul></div><div><h3 class="text-lg font-semibold text-header-text mb-3">${soft.title}</h3><ul class="space-y-2 text-text-color">${soft.items.map(item => `<li>• ${item}</li>`).join('')}</ul></div>`;
-        }
+        const main = this.config.main;
+        const setText = (id, text) => { const el = document.getElementById(id); if (el) el.textContent = text; };
+        const setHtml = (id, html) => { const el = document.getElementById(id); if (el) el.innerHTML = html; };
+        setText('summary-title', main.professionalSummary.title);
+        setHtml('summary-content', main.professionalSummary.paragraphs.map(paragraph => `<p class="text-text-color">${paragraph}</p>`).join(''));
+        setText('skills-title', main.skills.title);
+        setHtml('skills-grid', main.skills.categories.map(category => `<div><h3 class="text-lg font-semibold text-header-text mb-2">${category.title}</h3><ul class="space-y-2 text-text-color">${category.items.map(item => `<li>• ${item}</li>`).join('')}</ul></div>`).join(''));
+        setText('experience-title', main.experience.title);
+        setHtml('experience-list', main.experience.jobs.map(job => `<div class="bg-card p-6 rounded-lg card-shadow"><h3 class="text-xl font-semibold text-header-text">${job.title}</h3><p class="text-accent-color">${[job.company, job.location, job.period].filter(Boolean).join(' | ')}</p><ul class="mt-4 space-y-2 text-text-color">${job.responsibilities.map(resp => `<li>• ${resp}</li>`).join('')}</ul></div>`).join(''));
+        setText('education-title', main.education.title);
+        setHtml('education-list', main.education.degrees.map(degree => `<div class="bg-card p-6 rounded-lg card-shadow"><h3 class="text-xl font-semibold text-header-text">${degree.degree}</h3><p class="text-accent-color">${[degree.school, degree.location, degree.period].filter(Boolean).join(' | ')}</p><ul class="mt-4 space-y-2 text-text-color">${degree.details.map(detail => `<li>• ${detail}</li>`).join('')}</ul></div>`).join(''));
     }
 
     createProjectCard(project) {
